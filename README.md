@@ -2,11 +2,11 @@
 
 🎅❄️🎶Optimization project
 
-### 鸿蒙ArkTs仿网易云音乐
+### 鸿蒙ArkTs仿小红书
 
-- [api来源](https://github.com/Binaryify/NeteaseCloudMusicApi)
+- [api来源](https://www.baidu.com)
 
-- [源码地址](https://github.com/linwu-hi/open_neteasy_cloud)
+- [源码地址](https://github.com/herowws/old_book)
 
 ### 功能介绍
 
