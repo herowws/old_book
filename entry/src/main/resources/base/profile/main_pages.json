@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/main",
+    "pages/welcome",
+    "pages/NavigationExample",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/webview/webview"
+  ]
+}

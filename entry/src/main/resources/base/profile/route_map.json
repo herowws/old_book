@@ -1,0 +1,16 @@
+{
+  "routerMap": [
+    {
+      "name": "login",
+      "pageSourceFile": "src/main/ets/pages/login/login.ets",
+      "buildFunction": "RouteBuilder",
+      "data": {
+      }
+    },
+    {
+      "name": "webview",
+      "pageSourceFile": "src/main/ets/pages/webview/webview.ets",
+      "buildFunction": "RouteBuilder"
+    }
+  ]
+}
