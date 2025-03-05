@@ -29,7 +29,7 @@ export const themeManager = new ThemeManager()
 class ThemeColor {
   static readonly PRIMARY: ThemeData = {
     mainColor: '#EC404B',
-    secondColor: '#ffece0',
+    secondColor: '#f9faf9',
     title: "primary"
   }
   static readonly RED: ThemeData = {

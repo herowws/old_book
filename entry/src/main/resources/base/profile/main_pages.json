@@ -1,6 +1,7 @@
 {
   "src": [
     "pages/main",
+    "pages/test",
     "pages/welcome",
     "pages/NavigationExample",
     "pages/home/home",
