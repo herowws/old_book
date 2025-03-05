@@ -29,23 +29,23 @@ export const themeManager = new ThemeManager()
 class ThemeColor {
   static readonly PRIMARY: ThemeData = {
     mainColor: '#EC404B',
-    secondColor: '#f9faf9',
+    secondColor: '#F9FAf9',
     title: "primary"
   }
   static readonly RED: ThemeData = {
-    mainColor: '#ef4444', secondColor: '#fde8e8',
+    mainColor: '#ef4444', secondColor: '#F9FAf9',
     title: "red"
   }
   static readonly YELLOW: ThemeData = {
-    mainColor: '#ff9500', secondColor: '#fff2e0',
+    mainColor: '#ff9500', secondColor: '#F9FAf9',
     title: "yellow"
   }
   static readonly BLUE: ThemeData = {
-    mainColor: '#188bff', secondColor: '#e3f1ff',
+    mainColor: '#188bff', secondColor: '#F9FAf9',
     title: "blue"
   }
   static readonly GREEN: ThemeData = {
-    mainColor: '#24b277', secondColor: '#e4f5ee',
+    mainColor: '#24b277', secondColor: '#F9FAf9F',
     title: "green"
   }
 }

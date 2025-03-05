@@ -5,7 +5,6 @@ import { ThemeData, ThemeManager } from '../../common/theme/theme_manager';
 import { Tools } from '../../common/utils/tools';
 import { HomeController } from './controller';
 
-@Entry
 @Component
 export struct HomePage {
   scroller: Scroller = new Scroller();
@@ -50,6 +49,7 @@ export struct HomePage {
 struct WaterFlowView {
   scroller: Scroller = new Scroller()
   dataSource: WaterFlowDataSource = new WaterFlowDataSource()
+  @StorageProp(ThemeManager.themeKey) theme: ThemeData = {} as ThemeData
 
   build() {
     WaterFlow({ scroller: this.scroller }) {
@@ -58,31 +58,57 @@ struct WaterFlowView {
           Column() {
             Image(Tools.cover(item.images))
               .borderRadius({ topLeft: 5, topRight: 5 })
-
             Column() {
               Flex() {
                 Text(item.title)
-                  .textAlign(TextAlign.Start).padding({ top: 5, bottom: 5 })
-              }.backgroundColor(Color.Red)
+                  .maxLines(2)
+                  .textAlign(TextAlign.Start)
+                  .padding({ top: 5, bottom: 5 })
+              }
 
               Flex() {
                 Image(item.avatar)
                   .borderRadius(99)
                   .width(20)
                   .height(20)
+                  .padding({ right: 2 })
                 Text(item.nickname)
+                  .fontSize(12)
+                  .maxLines(1)
+                  .fontColor('#999999')
+                  .height(20)
                 Blank()
-                Text('赞')
-              }.backgroundColor(Color.Yellow)
-            }.padding({ left: 5, right: 5 })
+
+                SymbolGlyph($r('sys.symbol.heart'))
+                  .fontSize(15)
+                  .fontColor(['#999999'])
+                  .height(20)
+                  .padding({ left: 3, right: 3 })
+                Text(`${item.likes ?? 0}`)
+                  .fontSize(12)
+                  .height(20)
+                  .fontColor('#888888')
+                  .maxLines(1)
+              }
+              .align(Alignment.Start)
+            }
+            .padding({
+              left: 5,
+              right: 5,
+              top: 8,
+              bottom: 8
+            })
 
           }.alignItems(HorizontalAlign.Start)
+          .backgroundColor(Color.White)
+          .borderRadius(5)
         }
       }, (item: string) => item)
     }
     .columnsTemplate("1fr 1fr")
-    .columnsGap(10)
-    //.rowsGap(20)
+    .columnsGap(5)
+    .rowsGap(5)
+    .padding({ left: 5, right: 5 })
     .width('100%')
     .height('100%')
     .nestedScroll({

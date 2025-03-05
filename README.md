@@ -20,6 +20,7 @@
 
 ### 部分功能效果图
 
-<img src="https://github.com/herowws/old_book/blob/master/entry/src/main/resources/base/media/screen_signIn.png" width="270" height="450" alt="描述文字" title="可选标题">
+<img src="https://github.com/herowws/old_book/blob/master/entry/src/main/resources/base/media/screen_signIn.png" width="270" height="450">
+<img src="https://github.com/herowws/old_book/blob/master/entry/src/main/resources/base/media/screen_home.png" width="270" height="450" >
 
 ### **持续更新中...**
