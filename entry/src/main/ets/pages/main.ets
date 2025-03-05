@@ -28,8 +28,7 @@ struct MainPage {
 
   @Builder
   build() {
-
-
+    
     Navigation(this.pageStack) {
       Tabs({ barPosition: BarPosition.End }) {
         TabContent() {
